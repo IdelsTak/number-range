@@ -8,7 +8,7 @@ public class NumbersRangeTest {
 
     @Test
     @Disabled("Using hyphen delimiter messes up inclusion of negative numbers")
-    public void printsRangeWhenGivenHyphenSeparator() {
+    public void printsRangeForHyphenSeparator() {
         // Given
         NumbersRange numbersRange = new NumbersRange("1-4");
 
@@ -20,7 +20,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void printsRangeWhenGivenColonSeparator() {
+    public void printsRangeForColonSeparator() {
         // Given
         NumbersRange numbersRange = new NumbersRange("1:4");
 
@@ -32,7 +32,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void printsRangeWhenGivenNegativeNumbers() {
+    public void printsRangeForNegativeNumbers() {
         // Given
         NumbersRange numbersRange = new NumbersRange("-1:2");
 
@@ -44,7 +44,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void printsRangeRegardlessOfNumbersOrder() {
+    public void printsRangeRegardlessOfOrder() {
         // Given
         NumbersRange numbersRange = new NumbersRange("2:-1");
 
@@ -56,7 +56,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void printsRangeGivenStepSize() {
+    public void printsRangeWithStepSize() {
         // Given
         NumbersRange numbersRange = new NumbersRange("6:2:0");
 
@@ -80,7 +80,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void printsGivenNumber() {
+    public void printsSingleNumber() {
         // Given
         NumbersRange numbersRange = new NumbersRange("30");
 
@@ -92,7 +92,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void canPrintUniqueNumbers() {
+    public void printsUniqueNumbers() {
         // Given
         NumbersRange numbersRange = new NumbersRange("30:32,1:4,31");
 
@@ -105,7 +105,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void canPrintSortedAscendingNumbers() {
+    public void printsSortedAscendingNumbers() {
         // Given
         NumbersRange numbersRange = new NumbersRange("32:30");
 
@@ -118,7 +118,7 @@ public class NumbersRangeTest {
     }
 
     @Test
-    public void canPrintSortedDescendingNumbers() {
+    public void printsSortedDescendingNumbers() {
         // Given
         NumbersRange numbersRange = new NumbersRange("30:32");
 
