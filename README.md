@@ -1,6 +1,6 @@
 # NumberRange Utility
 
-This Java application processes number ranges from command-line arguments or standard input, with options for sorting, handling negative numbers, and ensuring uniqueness.
+Processes number ranges from command-line arguments or standard input, with options for sorting, handling negative numbers, and ensuring uniqueness.
 
 ## Usage
 
