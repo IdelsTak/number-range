@@ -103,13 +103,13 @@ public class NumberRange {
                                 The range separator will be auto detected unless -n
                                 (negative) flag is on.
                        Examples:
-                         `numrng 1-4`             : 1, 2, 3, 4
-                         `numrng 1:4`             : 1, 2, 3, 4
-                         `numrng -1:2`            : -1, 0, 1, 2
-                         `numrng 5:1:2`           : 5, 4, 3, 2
-                         `numrng 30:32,1:4,31`    : 30, 31, 32, 1, 2, 3, 4, 31
-                         `numrng 30:32,1:4 -s`    : 1, 2, 3, 4, 30, 31, 31, 32
-                         `numrng 30:32,1:4 -u`    : 1, 2, 3, 4, 30, 31, 32
+                         `java NumberRange.java 1-4`             : 1, 2, 3, 4
+                         `java NumberRange.java 1:4`             : 1, 2, 3, 4
+                         `java NumberRange.java -1:2`            : -1, 0, 1, 2
+                         `java NumberRange.java 5:1:2`           : 5, 4, 3, 2
+                         `java NumberRange.java 30:32,1:4,31`    : 30, 31, 32, 1, 2, 3, 4, 31
+                         `java NumberRange.java 30:32,1:4 -s`    : 1, 2, 3, 4, 30, 31, 31, 32
+                         `java NumberRange.java 30:32,1:4 -u`    : 1, 2, 3, 4, 30, 31, 32
                        """);
   }
 }
