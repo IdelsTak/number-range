@@ -29,7 +29,7 @@ Number Range in human-readable format. Pass `-` for stdin. The number range can 
 java NumberRange 1-4             # 1, 2, 3, 4
 java NumberRange 1:4             # 1, 2, 3, 4
 java NumberRange -1:2            # -1, 0, 1, 2
-java NumberRange 5:-1:2          # 5, 4, 3, 2
+java NumberRange 5:1:2           # 5, 4, 3, 2
 java NumberRange 30:32,1:4,31    # 30, 31, 32, 1, 2, 3, 4, 31
 java NumberRange 30:32,1:4 -s    # 1, 2, 3, 4, 30, 31, 31, 32
 java NumberRange 30:32,1:4 -u    # 1, 2, 3, 4, 30, 31, 32
